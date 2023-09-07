@@ -1,0 +1,24 @@
+/* Element Selector*/
+p {
+    color: brown;
+    font-size: larger;
+    font-weight: 700;
+}
+
+/**ID Selector*/
+#footer-p {
+
+   color: green;
+   font-size:small;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 700;
+   font-style: italic;
+   f
+}
+/**Class Selector**/
+.title {
+font-size:24px;
+font-weight:900;
+color: #490d49;
+text-decoration:underline;
+}
