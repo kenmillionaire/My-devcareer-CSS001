@@ -69,7 +69,9 @@ nav a {
   border: 2px solid var(--color-1);
 }
 
-.grid-cell, .grid2-cell, .flex-item{
+.grid-cell,
+.grid2-cell,
+.flex-item {
   height: 200px;
   background-color: var(--bg-color);
   border-radius: 10px;
@@ -77,26 +79,49 @@ nav a {
   border: 1px solid var(--border-color);
 }
 
-.flex{
-    display: flex;
-    gap: 15px;
+.flex {
+  display: flex;
+  gap: 15px;
 }
 
-.flex-item{
-    flex: 1;
+.flex-item {
+  flex: 1;
 }
 
 /* flex ordering */
-.flex-item:first-child{
-    order: 3;
+.flex-item:first-child {
+  order: 3;
 }
 
 /* styling on mobile devices */
 /* for both mobile and tablets - max width is 768px
 for only mobiles, max width is 540px */
-@media( max-width: 768px){
-       .flex{
-        flex-direction: column;
-    }
-    
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.animate {
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+
+/* keyframe */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
