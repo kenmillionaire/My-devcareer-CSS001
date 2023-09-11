@@ -90,3 +90,13 @@ nav a {
 .flex-item:first-child{
     order: 3;
 }
+
+/* styling on mobile devices */
+/* for both mobile and tablets - max width is 768px
+for only mobiles, max width is 540px */
+@media( max-width: 768px){
+       .flex{
+        flex-direction: column;
+    }
+    
+}
